@@ -24,6 +24,14 @@ void pop(){
 }
 
 
-int main(){
+int main(int argc,int *argv[]){
+
+	if(argc == 1){
+		printf("Please enter the name of the file.\n");
+	}
+	else{
+		FILE *filePointer,*tempPointer;
+		
+	}
 	return 0;
 }
