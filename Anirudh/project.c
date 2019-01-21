@@ -16,7 +16,30 @@ void pop()
 		top--;
 	}
 }
-int main()
+int main(int argc,char *argv[])
 {
-	
+	char data[255];
+	if(argc==1)
+		printf("enter a file ");
+	else 
+	{
+		FILE *filepointer,*tempointer;
+		int i;
+
+		filepointer=fopen("argv[1]",rt);
+		c=fgets(argv[1])
+		while(1)
+		{
+
+		}
+
+				{
+					if(tempointer=="{";
+							push(tempointer);
+				}
+		fclose();
+
+				
+	}
+	return 0;
 }
