@@ -1,6 +1,6 @@
 #include<stdio.h>
-char s[100],top;
-top=-1;
+char s[100];
+int top=-1;
 void push(char a)
 {
 	{
@@ -25,18 +25,23 @@ int main(int argc,char *argv[])
 	{
 		FILE *filepointer,*tempointer;
 		int i;
-
-		filepointer=fopen("argv[1]",rt);
-		c=fgets(argv[1])
+		char c,d;
+		filepointer=fopen("argv[1]","r");
+		tempointer=fopen("argv[1]","w");
 		while(1)
 		{
-
-		}
-
+			c=fgetc(filepointer);
+                	d=fputc(tempointer);
+			fputc(c);
+				if (c=='{')
 				{
-					if(tempointer=="{";
-							push(tempointer);
+					push({);
+					for(int x=0;x<=top;x++)
+					{
+						fputc(\t);
+					}
 				}
+		}
 		fclose();
 
 				
